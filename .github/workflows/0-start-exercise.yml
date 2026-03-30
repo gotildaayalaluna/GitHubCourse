@@ -51,9 +51,9 @@ jobs:
       - name: Update README with fork owner
         run: |
           sed -i \
-            -e "s|josevicenteayala/GitHubCourse|${{ github.repository }}|g" \
-            -e "s|josevicenteayala|${{ github.repository_owner }}|g" \
-            -e "s|/issues/[0-9]*|/issues/${{ env.ISSUE_NUMBER }}|g" \
+            -e "s|gotildaayalaluna/GitHubCourse|${{ github.repository }}|g" \
+            -e "s|gotildaayalaluna|${{ github.repository_owner }}|g" \
+            -e "s|/issues/[0-9]*)|/issues/${{ env.ISSUE_NUMBER }})|g" \
             README.md
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
